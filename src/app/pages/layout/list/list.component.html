@@ -5,11 +5,27 @@
       <nb-card-body>
         <nb-list>
           <nb-list-item *ngFor="let fruit of fruits">
-            {{ fruit }}
+
+            <div class="row align-items-center">
+
+              <div class="col-auto ">
+                {{ fruit }}
+              </div>
+              
+              <div class="col-auto" ></div>
+              <div class="col-auto" ></div>
+
+              <div class="col-auto ">
+                <a status="info" (click)="onClick()" href="#" nbButton>Info</a>
+              </div>
+
+            </div>
+
+
           </nb-list-item>
         </nb-list>
       </nb-card-body>
     </nb-card>
   </div>
-  
+
 </div>

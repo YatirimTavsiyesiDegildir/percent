@@ -6,7 +6,7 @@ export const fruits: string[] = [
   'Check Mobile App',
   'Set Up Auth',
   'Create admin',
-  'Watermelon',
+  'www.google.com',
   'Cantaloupe',
   'Oranges',
   'Peaches',
