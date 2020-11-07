@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xxl-12">
+    <div class="lists row">
+      <div class="col-md-12 col-lg-6 col-xxxl-6">
+        <nb-card class="list-card">
+          <nb-card-header>Current Microtasks</nb-card-header>
+          <nb-card-body>
+            <nb-list>
+              <nb-list-item *ngFor="let existingTask of tasks">
+
+                <div class="row align-items-center">
+
+                  <div class="col-auto ">
+                    {{ existingTask }}
+                  </div>
+
+                  <div class="col-auto" ></div>
+                  <div class="col-auto" ></div>
+
+                  <div class="col-auto" style="position: absolute; right: 0">
+                    <a status="info" (click)="onClick()" href="pages/task-edit" nbButton>Info</a>
+                  </div>
+
+                </div>
+
+
+              </nb-list-item>
+            </nb-list>
+          </nb-card-body>
+        </nb-card>
+      </div>
+
+    </div>
+
+  </div>
+</div>
