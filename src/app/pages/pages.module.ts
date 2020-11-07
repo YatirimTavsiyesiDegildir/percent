@@ -8,6 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import {TaskCreatorModule} from './task-creator/task-creator.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
+import {TaskModule} from './tasks/task.module';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
     ECommerceModule,
     MiscellaneousModule,
     TaskCreatorModule,
+    TaskModule,
   ],
   declarations: [
     PagesComponent,

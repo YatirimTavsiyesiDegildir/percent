@@ -5,6 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
+import { TaskComponent } from './tasks/task.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 
 const routes: Routes = [{
@@ -14,6 +15,10 @@ const routes: Routes = [{
     {
       path: 'task-creator',
       component: TaskCreatorComponent,
+    },
+    {
+      path: 'tasks',
+      component: TaskComponent,
     },
     {
       path: 'dashboard',
