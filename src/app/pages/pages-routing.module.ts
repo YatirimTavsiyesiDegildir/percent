@@ -7,6 +7,7 @@ import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
 import { TaskComponent } from './tasks/task.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import {ProfileComponent} from './profile/profile.component';
 
 const routes: Routes = [{
   path: '',
@@ -27,6 +28,10 @@ const routes: Routes = [{
     {
       path: 'iot-dashboard',
       component: DashboardComponent,
+    },
+    {
+      path: 'profile',
+      component: ProfileComponent,
     },
     {
       path: 'layout',
