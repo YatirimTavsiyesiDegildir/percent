@@ -12,16 +12,16 @@ const routes: Routes = [{
   component: PagesComponent,
   children: [
     {
+      path: 'task-creator',
+      component: TaskCreatorComponent,
+    },
+    {
       path: 'dashboard',
       component: ECommerceComponent,
     },
     {
       path: 'iot-dashboard',
       component: DashboardComponent,
-    },
-    {
-      path: 'task-creator',
-      component: TaskCreatorComponent,
     },
     {
       path: 'layout',
