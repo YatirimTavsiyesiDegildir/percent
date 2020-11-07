@@ -9,6 +9,11 @@ import {
   NbSelectModule,
   NbListModule,
 } from '@nebular/theme';
+import {
+  NbAccordionModule,
+  NbRouteTabsetModule,
+  NbStepperModule,
+} from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
@@ -34,9 +39,12 @@ import {FormsModule} from '../forms/forms.module';
     NgxEchartsModule,
     NgxChartsModule,
     FormsModule,
+    NbAccordionModule,
+    NbRouteTabsetModule,
+    NbStepperModule,
   ],
   declarations: [
     TaskDetailsComponent,
   ],
 })
-export class TaskDetails { }
+export class TaskDetailsModule { }
