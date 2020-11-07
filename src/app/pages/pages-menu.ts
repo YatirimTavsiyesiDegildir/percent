@@ -1,4 +1,4 @@
-import { NbMenuItem } from '@nebular/theme';
+import {NbMenuItem} from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
@@ -11,6 +11,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'MicroTasks Dashboard',
     icon: 'home-outline',
     link: '/pages/iot-dashboard',
+  },
+  {
+    title: 'Task Creator',
+    icon: 'edit-2-outline',
+    link: '/pages/task-creator',
   },
   {
     title: 'FEATURES',
