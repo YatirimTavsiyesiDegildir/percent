@@ -49,6 +49,9 @@ import { NewsService } from './news.service';
     NewsPostComponent,
     AccordionComponent,
   ],
+  exports: [
+    ListComponent,
+  ],
   providers: [
     NewsService,
   ],

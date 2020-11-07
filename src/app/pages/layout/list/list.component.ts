@@ -16,4 +16,8 @@ export class ListComponent {
     { name: 'Perry Cox', title: 'Doctor of Medicine' },
     { name: 'Ben Sullivan', title: 'Carpenter and photographer' },
   ];
+
+  onClick() {
+
+  }
 }
