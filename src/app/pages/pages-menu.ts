@@ -2,9 +2,13 @@ import {NbMenuItem} from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
-    link: '/pages/dashboard',
+    title: 'STUDENTS',
+    group: true,
+  },
+  {
+    title: 'Profile',
+    icon: 'edit-2-outline',
+    link: '/pages/profile',
     home: true,
   },
   {
@@ -13,20 +17,20 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/available-microtasks',
   },
   {
+    title: 'COMPANIES',
+    group: true,
+  },
+  {
     title: 'Task Creator',
     icon: 'edit-2-outline',
     link: '/pages/task-creator',
-  },
-  {
-    title: 'Profile',
-    icon: 'edit-2-outline',
-    link: '/pages/profile',
   },
   {
     title: 'Existing Tasks',
     icon: 'edit-2-outline',
     link: '/pages/task-details',
   },
+  /*
   {
     title: 'FEATURES',
     group: true,
@@ -259,4 +263,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'E-commerce',
+    icon: 'shopping-cart-outline',
+    link: '/pages/dashboard',
+  },
+   */
 ];

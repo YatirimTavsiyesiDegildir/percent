@@ -1,34 +1,45 @@
 <div class="row">
-  <div class="col-xxl-5">
+  <div class="col-xxl-3">
     <div class="row">
       <div>
 
-        <img style="width:400px;height:400px;border-radius:%20;" src="https://www.w3schools.com/images/picture.jpg"
-             alt="kate" class="img-thumbnail">
-
+        <img src="../../../assets/images/nick.png"
+             alt="nick" class="img-thumbnail">
       </div>
     </div>
   </div>
 
-  <div class="col-xxl-7">
+  <div class="col-xxl-9">
     <nb-card size="large">
       <nb-card-body>
 
-        <div class="align-items-center" style="padding: 5px;">
-          <h2 class="col-auto"> Çınar Kızıltepe </h2>
-          <h3 class="col-auto"> 'Farmer' </h3>
-        </div>
+          <h2> Çınar Kızıltepe </h2>
+          <h5 style="margin-bottom: 20px;"> 'Task Master' </h5>
 
-        <div style="padding: 5px;">
-          <h4>Level 4</h4>
-        </div>
+          <h5>Level 4</h5>
 
-        <div style="padding: 5px;">
-          <nb-progress-bar [value]="47" status="warning">Exp: 420</nb-progress-bar>
-        </div>
+          <nb-progress-bar [value]="47" status="warning" size="giant" style="margin-bottom: 20px;">Exp: 420</nb-progress-bar>
 
-        <nb-card size="small" accent="success" style="border-width: 2px; border-color: #3A3A3A ">
-          <h3 class="text-center"> Badges </h3>
+        <nb-card size="small" accent="success" style="padding: 20px">
+          <h3> Badges </h3>
+          <div >
+            <nb-user
+              name="Natural Leader"
+              size="giant"
+              picture="../../../assets/images/badges/natural.jpeg">
+            </nb-user>
+            <div style="height: 20px;"></div>
+            <nb-user
+              name="High Achiever"
+              size="giant"
+                     picture="../../../assets/images/badges/flag.jpg">
+            </nb-user>
+            <div style="height: 20px;"></div>
+            <nb-user size="giant"
+                     name="Team Member"
+                     picture="../../../assets/images/badges/clap.jpeg">
+            </nb-user>
+          </div>
         </nb-card>
 
       </nb-card-body>
@@ -44,26 +55,67 @@
         <h1> Skills </h1>
       </div>
 
-      <nb-card>
-        <nb-card-body>
-          <div class="row">
-            <nb-card>
-              <nb-card-body>
-                <div class="col-auto">
-                  <button nbButton size="small">HTML</button>
-                </div>
-              </nb-card-body>
-            </nb-card>
+      <div class="row">
 
-            <div class="col-auto">
-              <button nbButton size="small">JS</button>
-            </div>
-            <div class="col-auto">
-              <button nbButton size="small">CSS</button>
-            </div>
-          </div>
-        </nb-card-body>
-      </nb-card>
+        <div class="col-xxl-2 square">
+        <nb-card status="danger">
+          <nb-card-header>Java</nb-card-header>
+          <nb-card-body class="row">
+            <nb-icon icon="star"></nb-icon>
+            <nb-icon icon="star"></nb-icon>
+          </nb-card-body>
+        </nb-card>
+        </div>
+
+        <div class="col-xxl-2 square">
+        <nb-card status="danger">
+          <nb-card-header>React Native</nb-card-header>
+          <nb-card-body>
+            <nb-icon icon="star"></nb-icon>
+            <nb-icon icon="star"></nb-icon>
+            <nb-icon icon="star"></nb-icon>
+          </nb-card-body>
+        </nb-card>
+        </div>
+
+        <div class="col-xxl-2 square">
+          <nb-card status="danger">
+            <nb-card-header>Public Speaking</nb-card-header>
+            <nb-card-body>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+            </nb-card-body>
+          </nb-card>
+        </div>
+
+        <div class="col-xxl-2 square">
+          <nb-card status="danger">
+            <nb-card-header>Team Management</nb-card-header>
+            <nb-card-body>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+            </nb-card-body>
+          </nb-card>
+        </div>
+
+        <div class="col-xxl-2 square">
+          <nb-card status="danger">
+            <nb-card-header>Digital Marketing</nb-card-header>
+            <nb-card-body>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+              <nb-icon icon="star"></nb-icon>
+            </nb-card-body>
+          </nb-card>
+        </div>
+
+      </div>
+
+
 
     </nb-card-body>
   </nb-card>
@@ -79,13 +131,13 @@
         <div class="col">
           <nb-flip-card>
             <nb-card-front>
-              <nb-card size="tiny" accent="info">
-                <nb-card-header> Microsoft </nb-card-header>
+              <nb-card size="tiny" status="danger">
+                <nb-card-header> Amazon Web Services </nb-card-header>
                 <nb-card-body>
                   <nb-user size="giant"
-                           name="John Doe"
-                           title="Engineer"
-                           picture="https://via.placeholder.com/50/4479e7/ffffff?Text=IMG">
+                           name="Kate"
+                           title="CTO"
+                           picture="../../../assets/images/kate.png">
                   </nb-user>
                 </nb-card-body>
               </nb-card>
@@ -110,9 +162,9 @@
                 <nb-card-header> Facebook </nb-card-header>
                 <nb-card-body>
                   <nb-user size="giant"
-                           name="John Doe"
-                           title="Engineer"
-                           picture="https://via.placeholder.com/50/4479e7/ffffff?Text=IMG">
+                           name="Hayko Cepkin"
+                           title="Product Manager"
+                           picture="../../../assets/images/nick.png">
                   </nb-user>
                 </nb-card-body>
               </nb-card>
@@ -134,12 +186,12 @@
           <nb-flip-card>
             <nb-card-front>
               <nb-card size="tiny" status="info">
-                <nb-card-header> Havelsan </nb-card-header>
+                <nb-card-header> Turkcell </nb-card-header>
                 <nb-card-body>
                   <nb-user size="giant"
-                           name="John Doe"
-                           title="Engineer"
-                           picture="https://via.placeholder.com/50/4479e7/ffffff?Text=IMG">
+                           name="John Galt"
+                           title="Sr. Engineer"
+                           picture="../../../assets/images/jack.png">
                   </nb-user>
                 </nb-card-body>
               </nb-card>
