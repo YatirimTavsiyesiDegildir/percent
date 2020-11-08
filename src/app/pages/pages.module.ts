@@ -4,7 +4,6 @@ import { NbMenuModule } from '@nebular/theme';
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
 import { DashboardModule } from './task-available/dashboard.module';
-import { ECommerceModule } from './e-commerce/e-commerce.module';
 import {TaskCreatorModule} from './task-creator/task-creator.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
@@ -16,7 +15,6 @@ import {TaskDetailModule} from './task-detail/task-detail.module';
     ThemeModule,
     NbMenuModule,
     DashboardModule,
-    ECommerceModule,
     MiscellaneousModule,
     TaskCreatorModule,
     TaskDetailModule,

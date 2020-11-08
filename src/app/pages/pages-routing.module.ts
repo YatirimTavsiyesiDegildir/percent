@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './task-available/dashboard.component';
-import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
 import {TaskExistingComponent} from './task-existing/task-existing.component';
@@ -42,10 +41,6 @@ const routes: Routes = [{
       component: TaskDetailComponent,
     },
     {
-      path: 'dashboard',
-      component: ECommerceComponent,
-    },
-    {
       path: 'available-microtasks',
       component: DashboardComponent,
     },
@@ -77,26 +72,6 @@ const routes: Routes = [{
       path: 'extra-components',
       loadChildren: () => import('./extra-components/extra-components.module')
         .then(m => m.ExtraComponentsModule),
-    },
-    {
-      path: 'maps',
-      loadChildren: () => import('./maps/maps.module')
-        .then(m => m.MapsModule),
-    },
-    {
-      path: 'charts',
-      loadChildren: () => import('./charts/charts.module')
-        .then(m => m.ChartsModule),
-    },
-    {
-      path: 'editors',
-      loadChildren: () => import('./editors/editors.module')
-        .then(m => m.EditorsModule),
-    },
-    {
-      path: 'tables',
-      loadChildren: () => import('./tables/tables.module')
-        .then(m => m.TablesModule),
     },
     {
       path: 'miscellaneous',
