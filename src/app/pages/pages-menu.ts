@@ -30,6 +30,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'edit-2-outline',
     link: '/pages/task-details',
   },
+  /*
   {
     title: 'FEATURES',
     group: true,
@@ -267,4 +268,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'shopping-cart-outline',
     link: '/pages/dashboard',
   },
+   */
 ];
