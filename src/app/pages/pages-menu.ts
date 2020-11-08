@@ -23,6 +23,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/profile',
   },
   {
+    title: 'Existing Tasks',
+    icon: 'edit-2-outline',
+    link: '/pages/task-details',
+  },
+  {
     title: 'FEATURES',
     group: true,
   },
