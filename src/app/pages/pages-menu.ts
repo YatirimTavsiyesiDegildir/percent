@@ -12,7 +12,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: 'Available Microtasks',
+    title: 'My Tasks',
+    icon: 'home-outline',
+    link: '/pages/task-working',
+  },
+  {
+    title: 'Available MicroTasks',
     icon: 'home-outline',
     link: '/pages/available-microtasks',
   },

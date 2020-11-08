@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './available-microtasks/dashboard.component';
+import { DashboardComponent } from './task-available/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
@@ -10,6 +10,8 @@ import {TaskExistingComponent} from './task-existing/task-existing.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import {ProfileComponent} from './profile/profile.component';
 import {TaskEditComponent} from './task-edit/task-edit.component';
+import {TaskWorkingComponent} from './task-working/task-working.component';
+import {TaskSubmitModule} from './task-submit/task-submit.module';
 
 const routes: Routes = [{
   path: '',
@@ -18,6 +20,14 @@ const routes: Routes = [{
     {
       path: 'task-creator',
       component: TaskCreatorComponent,
+    },
+    {
+      path: 'task-working',
+      component: TaskWorkingComponent,
+    },
+    {
+      path: 'task-submit',
+      component: TaskSubmitModule,
     },
     {
       path: 'task-edit',

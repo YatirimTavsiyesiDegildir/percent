@@ -3,7 +3,7 @@
     <div class="lists row">
       <div class="col-md-12 col-lg-6 col-xxxl-6">
         <nb-card class="list-card">
-          <nb-card-header>Current MicroTasks</nb-card-header>
+          <nb-card-header>My MicroTasks</nb-card-header>
           <nb-card-body>
             <nb-list>
               <nb-list-item *ngFor="let existingTask of tasks">
@@ -18,7 +18,7 @@
                   <div class="col-auto" ></div>
 
                   <div class="col-auto" style="position: absolute; right: 0">
-                    <a status="info" href="pages/task-edit" nbButton>Info</a>
+                    <a status="success" href="pages/task-submit" nbButton>SUBMIT</a>
                   </div>
 
                 </div>
@@ -27,11 +27,6 @@
               </nb-list-item>
             </nb-list>
           </nb-card-body>
-          <nb-card-footer>
-            <div class = 'row'>
-              <a nbButton status="success" class="col align-self-end" href="pages/task-creator">Add New</a>
-            </div>
-          </nb-card-footer>
         </nb-card>
       </div>
 
