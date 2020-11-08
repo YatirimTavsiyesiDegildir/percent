@@ -2,12 +2,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardComponent } from './available-microtasks/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
-import { TaskComponent } from './tasks/task.component';
-import {TaskDetailsComponent} from './task-details/task-details.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
+import {TaskExistingComponent} from './task-existing/task-existing.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import {ProfileComponent} from './profile/profile.component';
 import {TaskEditComponent} from './task-edit/task-edit.component';
 
 const routes: Routes = [{
@@ -24,19 +25,23 @@ const routes: Routes = [{
     },
     {
       path: 'task-details',
-      component: TaskDetailsComponent,
+      component: TaskExistingComponent,
     },
     {
       path: 'tasks',
-      component: TaskComponent,
+      component: TaskDetailComponent,
     },
     {
       path: 'dashboard',
       component: ECommerceComponent,
     },
     {
-      path: 'iot-dashboard',
+      path: 'available-microtasks',
       component: DashboardComponent,
+    },
+    {
+      path: 'profile',
+      component: ProfileComponent,
     },
     {
       path: 'layout',

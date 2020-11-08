@@ -1,4 +1,4 @@
-export const fruits: string[] = [
+export const tasks: string[] = [
   'Prepare presentation',
   'Finish styling',
   'Have a break',

@@ -9,16 +9,11 @@ import {
   NbSelectModule,
   NbListModule,
 } from '@nebular/theme';
-import {
-  NbAccordionModule,
-  NbRouteTabsetModule,
-  NbStepperModule,
-} from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { TaskDetailsComponent } from './task-details.component';
+import { TaskDetailComponent } from './task-detail.component';
 import { ChartModule } from 'angular2-chartjs';
 
 
@@ -39,12 +34,11 @@ import {FormsModule} from '../forms/forms.module';
     NgxEchartsModule,
     NgxChartsModule,
     FormsModule,
-    NbAccordionModule,
-    NbRouteTabsetModule,
-    NbStepperModule,
   ],
   declarations: [
-    TaskDetailsComponent,
+    TaskDetailComponent,
   ],
 })
-export class TaskDetailsModule { }
+export class TaskDetailModule { }
+
+// TODO: Cleanup
