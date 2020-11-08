@@ -8,6 +8,7 @@ import {
   NbRouteTabsetModule,
   NbStepperModule,
   NbTabsetModule, NbUserModule,
+  NbInputModule, NbIconModule,
 } from '@nebular/theme';
 
 import { ThemeModule } from '../../@theme/theme.module';
@@ -21,6 +22,7 @@ import { NewsPostComponent } from './infinite-list/news-post/news-post.component
 import { NewsPostPlaceholderComponent } from './infinite-list/news-post-placeholder/news-post-placeholder.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { NewsService } from './news.service';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 @NgModule({
   imports: [
@@ -36,6 +38,9 @@ import { NewsService } from './news.service';
     NbAccordionModule,
     NbUserModule,
     LayoutRoutingModule,
+    NbInputModule,
+    NbEvaIconsModule,
+    NbIconModule,
   ],
   declarations: [
     LayoutComponent,

@@ -1,15 +1,21 @@
 <div class="lists row">
   <div class="col-md-12 col-lg-6 col-xxxl-6">
     <nb-card class="list-card">
-      <nb-card-header>Current Microtasks</nb-card-header>
+      <nb-card-header>Available Microtasks</nb-card-header>
       <nb-card-body>
+        <div class="row">
+          <!--<nb-icon icon="search-outline"></nb-icon>-->
+          <input id="microtask-search" type="text" nbInput fullWidth placeholder="Project Name, Sector, Skills..."
+                 (keypress)="search($event)">
+        </div>
+
         <nb-list>
-          <nb-list-item *ngFor="let fruit of fruits">
+          <nb-list-item *ngFor="let task of searchedTasks">
 
             <div class="row align-items-center">
 
               <div class="col-auto ">
-                {{ fruit }}
+                {{ task }}
               </div>
 
               <div class="col-auto" ></div>
@@ -29,3 +35,6 @@
   </div>
 
 </div>
+
+<script>
+</script>

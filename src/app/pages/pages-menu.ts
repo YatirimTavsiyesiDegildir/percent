@@ -8,9 +8,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     home: true,
   },
   {
-    title: 'MicroTasks Dashboard',
+    title: 'Available Microtasks',
     icon: 'home-outline',
-    link: '/pages/iot-dashboard',
+    link: '/pages/available-microtasks',
   },
   {
     title: 'Task Creator',

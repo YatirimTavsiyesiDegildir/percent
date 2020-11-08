@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { fruits } from './fruits-list';
+import { tasks } from './task-list';
+
 
 @Component({
   selector: 'ngx-list',
@@ -7,7 +8,8 @@ import { fruits } from './fruits-list';
   styleUrls: ['list.component.scss'],
 })
 export class ListComponent {
-  fruits = fruits;
+  tasks = tasks;
+  searchedTasks = [...tasks];
 
   users: { name: string, title: string }[] = [
     { name: 'Carla Espinosa', title: 'Nurse' },
@@ -20,4 +22,17 @@ export class ListComponent {
   onClick() {
 
   }
+
+  search(event) {
+    const searchString = event.target.value + event.key;
+    this.searchedTasks = [];
+
+    for (const task of tasks) {
+      if (task.indexOf(searchString) !== -1) {
+        this.searchedTasks.push(task);
+      }
+    }
+  }
+
+
 }
