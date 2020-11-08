@@ -17,7 +17,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/task-working',
   },
   {
-    title: 'Available MicroTasks',
+    title: 'Available Task',
     icon: 'home-outline',
     link: '/pages/available-microtasks',
   },
