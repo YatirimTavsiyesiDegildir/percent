@@ -5,7 +5,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './available-microtasks/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { TaskCreatorComponent } from './task-creator/task-creator.component';
-import { TaskComponent } from './tasks/task.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
 import {TaskDetailsComponent} from './task-details/task-details.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import {TaskEditComponent} from './task-edit/task-edit.component';
@@ -28,7 +28,7 @@ const routes: Routes = [{
     },
     {
       path: 'tasks',
-      component: TaskComponent,
+      component: TaskDetailComponent,
     },
     {
       path: 'dashboard',

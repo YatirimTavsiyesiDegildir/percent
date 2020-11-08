@@ -13,7 +13,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { TaskComponent } from './task.component';
+import { TaskDetailComponent } from './task-detail.component';
 import { ChartModule } from 'angular2-chartjs';
 
 
@@ -36,9 +36,9 @@ import {FormsModule} from '../forms/forms.module';
     FormsModule,
   ],
   declarations: [
-    TaskComponent,
+    TaskDetailComponent,
   ],
 })
-export class TaskModule { }
+export class TaskDetailModule { }
 
 // TODO: Cleanup

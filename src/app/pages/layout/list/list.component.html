@@ -3,11 +3,9 @@
     <nb-card class="list-card">
       <nb-card-header>Available Microtasks</nb-card-header>
       <nb-card-body>
-        <div class="row">
           <!--<nb-icon icon="search-outline"></nb-icon>-->
           <input id="microtask-search" type="text" nbInput fullWidth placeholder="Project Name, Sector, Skills..."
                  (keypress)="search($event)">
-        </div>
 
         <nb-list>
           <nb-list-item *ngFor="let task of searchedTasks">
