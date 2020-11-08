@@ -13,12 +13,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'My Tasks',
-    icon: 'home-outline',
+    icon: 'brush-outline',
     link: '/pages/task-working',
   },
   {
     title: 'Available Task',
-    icon: 'home-outline',
+    icon: 'clipboard-outline',
     link: '/pages/available-microtasks',
   },
   {
