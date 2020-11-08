@@ -3,13 +3,9 @@ import {existingTasks} from './existing-tasks';
 
 @Component({
   selector: 'ngx-task-details' ,
-  templateUrl: './task-details.component.html',
+  templateUrl: './task-existing.component.html',
   styleUrls: ['list.component.scss'],
 })
-export class TaskDetailsComponent {
+export class TaskExistingComponent {
   tasks = existingTasks;
-
-  onClick() {
-
-  }
 }

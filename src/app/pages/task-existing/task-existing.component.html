@@ -18,7 +18,7 @@
                   <div class="col-auto" ></div>
 
                   <div class="col-auto" style="position: absolute; right: 0">
-                    <a status="info" (click)="onClick()" href="pages/task-edit" nbButton>Info</a>
+                    <a status="info" href="pages/task-edit" nbButton>Info</a>
                   </div>
 
                 </div>
@@ -27,6 +27,11 @@
               </nb-list-item>
             </nb-list>
           </nb-card-body>
+          <nb-card-footer>
+            <div class = 'row'>
+              <a nbButton status="success" class="col align-self-end" href="pages/task-creator">Add New</a>
+            </div>
+          </nb-card-footer>
         </nb-card>
       </div>
 

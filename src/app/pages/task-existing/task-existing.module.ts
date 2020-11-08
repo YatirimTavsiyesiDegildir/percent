@@ -18,7 +18,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { TaskDetailsComponent } from './task-details.component';
+import { TaskExistingComponent } from './task-existing.component';
 import { ChartModule } from 'angular2-chartjs';
 
 
@@ -44,7 +44,7 @@ import {FormsModule} from '../forms/forms.module';
     NbStepperModule,
   ],
   declarations: [
-    TaskDetailsComponent,
+    TaskExistingComponent,
   ],
 })
-export class TaskDetailsModule { }
+export class TaskExistingModule { }
