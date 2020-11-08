@@ -8,6 +8,7 @@ import { TaskCreatorComponent } from './task-creator/task-creator.component';
 import { TaskDetailComponent } from './task-detail/task-detail.component';
 import {TaskExistingComponent} from './task-existing/task-existing.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
+import {ProfileComponent} from './profile/profile.component';
 import {TaskEditComponent} from './task-edit/task-edit.component';
 
 const routes: Routes = [{
@@ -37,6 +38,10 @@ const routes: Routes = [{
     {
       path: 'available-microtasks',
       component: DashboardComponent,
+    },
+    {
+      path: 'profile',
+      component: ProfileComponent,
     },
     {
       path: 'layout',
