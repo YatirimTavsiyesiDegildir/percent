@@ -1,10 +1,12 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { NbMediaBreakpointsService, NbMenuService, NbSidebarService, NbThemeService } from '@nebular/theme';
+import { Component, OnDestroy, OnInit, Inject } from '@angular/core';
+import { NbMediaBreakpointsService, NbMenuService, NbSidebarService, NbThemeService, NB_WINDOW } from '@nebular/theme';
 
 import { UserData } from '../../../@core/data/users';
 import { LayoutService } from '../../../@core/utils';
-import { map, takeUntil } from 'rxjs/operators';
+import { filter, map, takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'ngx-header',
@@ -45,8 +47,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
               private themeService: NbThemeService,
               private userService: UserData,
               private layoutService: LayoutService,
-              private breakpointService: NbMediaBreakpointsService) {
+              private breakpointService: NbMediaBreakpointsService,
+              @Inject(NB_WINDOW) private window,
+              private route:Router) {
   }
+
 
   ngOnInit() {
     this.currentTheme = this.themeService.currentTheme;
@@ -69,6 +74,15 @@ export class HeaderComponent implements OnInit, OnDestroy {
         takeUntil(this.destroy$),
       )
       .subscribe(themeName => this.currentTheme = themeName);
+
+    this.menuService.onItemClick()
+      .pipe(
+        map(({ item: { title } }) => title),
+      )
+      .subscribe(title => {
+        if (title === 'Profile') {
+          this.route.navigate(['/pages/profile']);
+      }});
   }
 
   ngOnDestroy() {
