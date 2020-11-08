@@ -7,13 +7,13 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Profile',
-    icon: 'edit-2-outline',
+    icon: 'person-outline',
     link: '/pages/profile',
     home: true,
   },
   {
     title: 'Available Microtasks',
-    icon: 'home-outline',
+    icon: 'clipboard-outline',
     link: '/pages/available-microtasks',
   },
   {
@@ -27,7 +27,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
   {
     title: 'Existing Tasks',
-    icon: 'edit-2-outline',
+    icon: 'checkmark-circle-outline',
     link: '/pages/task-details',
   },
   /*
