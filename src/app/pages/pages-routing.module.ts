@@ -11,7 +11,7 @@ import { NotFoundComponent } from './miscellaneous/not-found/not-found.component
 import {ProfileComponent} from './profile/profile.component';
 import {TaskEditComponent} from './task-edit/task-edit.component';
 import {TaskWorkingComponent} from './task-working/task-working.component';
-import {TaskSubmitModule} from './task-submit/task-submit.module';
+import {TaskSubmitComponent} from './task-submit/task-submit.component';
 
 const routes: Routes = [{
   path: '',
@@ -27,7 +27,7 @@ const routes: Routes = [{
     },
     {
       path: 'task-submit',
-      component: TaskSubmitModule,
+      component: TaskSubmitComponent,
     },
     {
       path: 'task-edit',
@@ -105,7 +105,7 @@ const routes: Routes = [{
     },
     {
       path: '',
-      redirectTo: 'dashboard',
+      redirectTo: 'profile',
       pathMatch: 'full',
     },
     {

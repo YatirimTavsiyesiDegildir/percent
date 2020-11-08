@@ -8,6 +8,7 @@ import {
   NbIconModule,
   NbSelectModule,
   NbListModule,
+  NbInputModule,
 } from '@nebular/theme';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -34,6 +35,7 @@ import {FormsModule} from '../forms/forms.module';
     NgxEchartsModule,
     NgxChartsModule,
     FormsModule,
+    NbInputModule,
   ],
   declarations: [
     TaskSubmitComponent,
