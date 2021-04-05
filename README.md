@@ -1,5 +1,4 @@
 # Percent
-**Running On:** [percent.careers](https://percent.careers)
 
 Percent is a microtask management platform that allows people to practice and learn new skills, while actually producing value for companies. Percent's aim is to fill the gap between internships and employment by letting students learn new skills while doing actual micro tasks for companies. Which in turn allows companies to test the new hires with the most accurate metric on the market: real job done.
 
